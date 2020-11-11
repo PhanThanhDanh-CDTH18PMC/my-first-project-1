@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Universal Cinema</string>
+    <string name="slide_description">Slide picture</string>
+    <string name="background_description">Background Application</string>
+    <string name="action_home">Home</string>
+    <string name="action_theater">Theater</string>
+    <string name="action_search">Movie</string>
+    <string name="action_account">Account</string>
+    <string name="image_description">Movie Item</string>
+    <string name="imageText">Tiệc trăng máu</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="movie_image_description">Movie Image Description</string>
+</resources>
