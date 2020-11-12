@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dicionary</string>
+    <string name="btnAdd">Thêm</string>
+    <string name="btnSearch">Tìm</string>
+</resources>
