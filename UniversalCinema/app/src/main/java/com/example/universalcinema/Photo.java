@@ -11,10 +11,14 @@ import androidx.annotation.Nullable;
 public class Photo
 {
     private int resourceId;
+    private String name;
+    private String genre;
 
-    public Photo(int resourceId)
+    public Photo(int resourceId, String name, String genre)
     {
         this.resourceId = resourceId;
+        this.genre = genre;
+        this.name = name;
     }
 
     public int getResourceId()
@@ -25,5 +29,25 @@ public class Photo
     public void setResourceId(int resourceId)
     {
         this.resourceId = resourceId;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public String getGenre()
+    {
+        return genre;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public void setGenre(String genre)
+    {
+        this.genre = genre;
     }
 }

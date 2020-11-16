@@ -29,18 +29,22 @@ public class HomeFragment extends Fragment
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         RecyclerView recyclerView = (RecyclerView) getView().findViewById(R.id.recyclerView);
+        RecyclerView recyclerView1 = (RecyclerView) getView().findViewById(R.id.recyclerView2);
         recyclerView.setHasFixedSize(true);
+        recyclerView1.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL,false));
+        recyclerView1.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL,false));
 
         List<Photo> list = new ArrayList<>();
-        list.add(new Photo(R.drawable.movie1));
-        list.add(new Photo(R.drawable.movie1));
-        list.add(new Photo(R.drawable.movie3));
-        list.add(new Photo(R.drawable.movie4));
-        list.add(new Photo(R.drawable.movie5));
+        list.add(new Photo(R.drawable.movie1, "Đôi mắt âm dương", "Kinh Dị"));
+        list.add(new Photo(R.drawable.movie1, "Avenger InfinityWar", "Siêu Anh Hùng"));
+        list.add(new Photo(R.drawable.movie1, "Mắt biết", "Tình cảm"));
+        list.add(new Photo(R.drawable.movie1, "EndGame", "Siêu Anh Hùng"));
+        list.add(new Photo(R.drawable.movie1, "Tiệc trăng máu", "Tâm Lý Xã Hội"));
 
         RecyclerAdapter recyclerAdapter = new RecyclerAdapter(list, this.getContext());
         recyclerView.setAdapter(recyclerAdapter);
+        recyclerView1.setAdapter(recyclerAdapter);
 
         super.onViewCreated(view, savedInstanceState);
     }

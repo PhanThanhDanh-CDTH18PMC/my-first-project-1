@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,11 +26,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder
     {
         ImageView imageView;
+        TextView movieName;
+        TextView movieGenre;
 
         public ViewHolder(@NonNull View itemView)
         {
             super(itemView);
             imageView = itemView.findViewById(R.id.movieImage);
+            movieGenre = itemView.findViewById(R.id.movieGenre);
+            movieName = itemView.findViewById(R.id.movieName);
         }
     }
 
@@ -49,6 +54,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     {
         final Photo listPhoto = list.get(position);
         holder.imageView.setImageResource(listPhoto.getResourceId());
+        holder.movieName.setText(listPhoto.getName());
+        holder.movieGenre.setText(listPhoto.getGenre());
     }
 
     @Override

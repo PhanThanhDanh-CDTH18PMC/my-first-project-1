@@ -136,11 +136,11 @@ public class MainActivity extends AppCompatActivity
     private List<Photo> getListImg()
     {
         List<Photo> list = new ArrayList<>();
-        list.add(new Photo(R.drawable.slide1));
-        list.add(new Photo(R.drawable.slide2));
-        list.add(new Photo(R.drawable.slide3));
-        list.add(new Photo(R.drawable.slide4));
-        list.add(new Photo(R.drawable.slide5));
+        list.add(new Photo(R.drawable.slide1, "slide 1", "slide"));
+        list.add(new Photo(R.drawable.slide2, "slide 2", "slide"));
+        list.add(new Photo(R.drawable.slide3, "slide 3", "slide"));
+        list.add(new Photo(R.drawable.slide4, "slide 4", "slide"));
+        list.add(new Photo(R.drawable.slide5, "slide 5", "slide"));
         return list;
     }
 
